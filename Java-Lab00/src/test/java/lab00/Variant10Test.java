@@ -161,7 +161,7 @@ class Variant10Test {
     static Stream<Arguments> arrayTaskTestData() {
         return Stream.of(
                 Arguments.arguments(new int[]{2, 4, 5, 3, 1}, new int[]{1, 2, 3, 4, 5}, "Error with mixed odd and even numbers"),
-                Arguments.arguments(new int[]{2, 4, 1, 3}, new int[]{1, 2, 3, 4}, "Error with mixed even and odd numbers"),
+                Arguments.arguments(new int[]{2, 4, 3, 1}, new int[]{1, 2, 3, 4}, "Error with mixed even and odd numbers"),
                 Arguments.arguments(new int[]{1}, new int[]{1}, "Error with single element array"),
                 Arguments.arguments(new int[]{}, new int[]{}, "Error with an empty array")
         );
